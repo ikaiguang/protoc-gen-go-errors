@@ -1,9 +1,23 @@
 # protoc-gen-go-errors
 
-自定义 go-kratos/kratos 错误
+自定义 go-kratos/kratos 错误；
+
+当前版本: v2.7.3 [version](./version.go)
 
 * kratos [kratos](https://github.com/go-kratos/kratos)
 * protoc-gen-go-errors [protoc-gen-go-errors](https://github.com/go-kratos/kratos/blob/main/cmd/protoc-gen-go-errors/main.go)
+
+**Protobuf 定义如下：**
+
+```protobuf
+// ERROR .
+enum ERROR {
+  option (errors.default_code) = 500;
+
+  // 未知错误
+  UNKNOWN = 0 [(errors.code) = 500];
+}
+```
 
 **生成的代码如下：**
 

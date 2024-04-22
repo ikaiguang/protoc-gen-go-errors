@@ -1,4 +1,4 @@
-module github.com/go-kratos/kratos/cmd/protoc-gen-go-errors/v2
+module github.com/ikaiguang/protoc-gen-go-errors
 
 go 1.19
 
