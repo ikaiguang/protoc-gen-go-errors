@@ -11,6 +11,8 @@ enum ERROR {
   // 未指定
   UNSPECIFIED = 0;
 
+  // success
+  OK = 1 [(errors.code) = 200];
   // 未知错误
-  UNKNOWN = 1 [(errors.code) = 500];
+  UNKNOWN = 2 [(errors.code) = 500];
 }

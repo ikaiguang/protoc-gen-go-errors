@@ -11,7 +11,6 @@
 
 - `go install github.com/ikaiguang/protoc-gen-go-errors@v0.2.7.3`
 
-
 **Protobuf 定义如下：**
 
 ```protobuf

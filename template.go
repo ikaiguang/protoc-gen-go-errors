@@ -9,6 +9,9 @@ import (
 //go:embed errorsTemplate.tpl
 var errorsTemplate string
 
+//go:embed errorsTemplateCustom.tpl
+var errorsTemplateCustom string
+
 type errorInfo struct {
 	Name          string
 	Value         string
@@ -20,12 +23,26 @@ type errorInfo struct {
 }
 
 type errorWrapper struct {
-	Errors []*errorInfo
+	EnumName    string
+	DefaultCode int
+	Errors      []*errorInfo
 }
 
 func (e *errorWrapper) execute() string {
 	buf := new(bytes.Buffer)
 	tmpl, err := template.New("errors").Parse(errorsTemplate)
+	if err != nil {
+		panic(err)
+	}
+	if err := tmpl.Execute(buf, e); err != nil {
+		panic(err)
+	}
+	return buf.String()
+}
+
+func (e *errorWrapper) executeCustom() string {
+	buf := new(bytes.Buffer)
+	tmpl, err := template.New("errors").Parse(errorsTemplateCustom)
 	if err != nil {
 		panic(err)
 	}

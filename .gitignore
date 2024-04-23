@@ -111,3 +111,8 @@ openapi.yaml
 *.swagger.json
 _output
 mytest
+
+# example
+example/err.pb.go
+example/err_errors.pb.go
+example/err_errors_custom.pb.go

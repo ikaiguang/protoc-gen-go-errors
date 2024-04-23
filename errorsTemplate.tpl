@@ -16,11 +16,4 @@ func Error{{ .CamelValue }}(format string, args ...interface{}) *errors.Error {
 	  return e
 }
 
-{{ if .HasComment }}{{ .Comment }}{{ end -}}
-func Default{{ .CamelValue }}_Error() *errors.Error {
-	 e := errors.New({{ .HTTPCode }}, {{ .Name }}_{{ .Value }}.String(), {{ .OriginComment }})
-	 e.Metadata = map[string]string{"reason": strconv.Itoa(int({{ .Name }}_{{ .Value }}.Number()))}
-     return e
-}
-
 {{- end }}
