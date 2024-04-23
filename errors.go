@@ -124,7 +124,7 @@ func genErrorsReason(_ *protogen.Plugin, _ *protogen.File, g *protogen.Generated
 	g.P("    if v, ok := ERROR_http_code[x.String()]; ok {")
 	g.P("        return v")
 	g.P("    }")
-	g.P("    return 0")
+	g.P("    return ", code)
 	g.P("}")
 
 	if len(ew.Errors) == 0 {

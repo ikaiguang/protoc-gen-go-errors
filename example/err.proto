@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package example;
+
+option go_package = "github.com/ikaiguang/protoc-gen-go-errors/example;example";
+
+import "errors/errors.proto";
+
+enum ERROR {
+  option (errors.default_code) = 500;
+  // 未指定
+  UNSPECIFIED = 0;
+
+  // 未知错误
+  UNKNOWN = 1 [(errors.code) = 500];
+}
