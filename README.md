@@ -5,11 +5,15 @@
 当前版本: v2.7.3 [version](./version.go)
 
 * kratos [kratos](https://github.com/go-kratos/kratos)
-* protoc-gen-go-errors [protoc-gen-go-errors](https://github.com/go-kratos/kratos/blob/main/cmd/protoc-gen-go-errors/main.go)
+*
+protoc-gen-go-errors [protoc-gen-go-errors](https://github.com/go-kratos/kratos/blob/main/cmd/protoc-gen-go-errors/main.go)
 
 **安装覆盖 kratos errors 工具**
 
-- `go install github.com/ikaiguang/protoc-gen-go-errors@v0.2.7.3`
+| kratos errors | this errors                                                   |
+|---------------|---------------------------------------------------------------|
+| v2.7.3        | `go install github.com/ikaiguang/protoc-gen-go-errors@v0.0.1` |
+| v2.7.3        | `go install github.com/ikaiguang/protoc-gen-go-errors@v0.0.2` |
 
 **Protobuf 定义如下：**
 
