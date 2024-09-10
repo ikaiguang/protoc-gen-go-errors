@@ -2,7 +2,7 @@
 
 自定义 go-kratos/kratos 错误；
 
-当前版本: v2.7.3 [version](./version.go)
+当前版本: [version](./version.go)
 
 * kratos [kratos](https://github.com/go-kratos/kratos)
 *
