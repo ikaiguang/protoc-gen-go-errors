@@ -14,6 +14,7 @@ protoc-gen-go-errors [protoc-gen-go-errors](https://github.com/go-kratos/kratos/
 |---------------|---------------------------------------------------------------|
 | v2.7.3        | `go install github.com/ikaiguang/protoc-gen-go-errors@v0.0.1` |
 | v2.7.3        | `go install github.com/ikaiguang/protoc-gen-go-errors@v0.0.2` |
+| v2.8.0        | `go install github.com/ikaiguang/protoc-gen-go-errors@v0.0.3` |
 
 **Protobuf 定义如下：**
 
