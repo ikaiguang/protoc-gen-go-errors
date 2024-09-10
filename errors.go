@@ -105,8 +105,6 @@ func genErrorsReason(gen *protogen.Plugin, file *protogen.File, g *protogen.Gene
 		}
 		ew.Errors = append(ew.Errors, err)
 	}
-
-	// errors
 	if len(ew.Errors) == 0 {
 		return true
 	}
